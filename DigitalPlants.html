@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meme & Plant Emporium</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #fceabb;
+      background: linear-gradient(to right, #f8b500, #fceabb);
+    }
+
+    header {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    nav {
+      background: #ffd166;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .buy-btn {
+      background: #06d6a0;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #073b4c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌱 Meme & Plant Emporium 😂</div>
+    <p>Your one-stop shop for digital greens and laughs!</p>
+  </header>
+
+  <nav>
+    <a href="#plants">Plants</a>
+    <a href="#memes">Memes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="products" id="plants">
+    <div class="card">
+      <img src="https://via.placeholder.com/100?text=🌿" alt="Digital Fern" />
+      <h3>Digital Fern</h3>
+      <p>Fresh pixelated oxygen.</p>
+      <button class="buy-btn" onclick="buy('Digital Fern')">Buy</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/100?text=🌵" alt="Pixel Cactus" />
+      <h3>Pixel Cactus</h3>
+      <p>Zero water. 100% vibe.</p>
+      <button class="buy-btn" onclick="buy('Pixel Cactus')">Buy</button>
+    </div>
+  </section>
+
+  <section class="products" id="memes">
+    <div class="card">
+      <img src="https://via.placeholder.com/100?text=😂" alt="Dank Meme" />
+      <h3>Dank Meme</h3>
+      <p>Level: Internet Supreme.</p>
+      <button class="buy-btn" onclick="buy('Dank Meme')">Buy</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/100?text=🐸" alt="Pepe Classic" />
+      <h3>Pepe Classic</h3>
+      <p>Now in HD pixels!</p>
+      <button class="buy-btn" onclick="buy('Pepe Classic')">Buy</button>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us at lol@plantmeme.store | © 2025 Meme & Plant Emporium</p>
+  </footer>
+
+  <script>
+    function buy(item) {
+      alert(`You bought a ${item}! 🎉`);
+    }
+  </script>
+</body>
+</html>
